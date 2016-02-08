@@ -120,4 +120,23 @@ public class Final1ClusterTest {
 
         Assert.assertEquals(8, result);
     }
+
+    @Test
+    public void testClusterSize7() {
+        Final1Cluster final1Cluster = new Final1Cluster();
+
+        List<Coordinate> coordinateList = new ArrayList<>();
+        coordinateList.add(new Coordinate(1,1));
+        coordinateList.add(new Coordinate(2,1));
+        coordinateList.add(new Coordinate(2,2));
+        coordinateList.add(new Coordinate(1,2));
+        coordinateList.add(new Coordinate(5,6));
+        coordinateList.add(new Coordinate(5,7));
+        coordinateList.add(new Coordinate(5,8));
+        coordinateList.add(new Coordinate(5,2));
+
+        int result = final1Cluster.clusterSize(coordinateList);
+
+        Assert.assertEquals(4, result);
+    }
 }

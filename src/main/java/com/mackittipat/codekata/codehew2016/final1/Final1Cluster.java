@@ -41,6 +41,8 @@ public class Final1Cluster {
                     allNeighborInResultList = false;
                     clusterSize(neighborCoordinate, coordinateList, resultCoordinateList);
                     break;
+                } else {
+                    continue;
                 }
             }
             if(allNeighborInResultList) {
